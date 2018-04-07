@@ -6,6 +6,7 @@ import { AgmCoreModule } from '@agm/core';
 import { MokanixServiceService } from './mokanix-service.service';
 import { HttpModule } from '@angular/http';
 
+import {MatDividerModule, MatListModule, MatToolbarModule} from '@angular/material';
 import { AppComponent } from './app.component';
 
 
@@ -18,6 +19,9 @@ import { AppComponent } from './app.component';
     CommonModule,
     FormsModule,
     HttpModule,
+    MatToolbarModule,
+    MatDividerModule,
+    MatListModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAboLHXpZ-1XHCtelvgaIohTRtUEYmUMpI'
     })

@@ -1,7 +1,16 @@
-<h1>{{ title }}</h1>
+<mat-toolbar class = "mat-accent">
+  <div class = "md-toolbar-tools">
+     <h2>{{title}}</h2>
+  </div>
+</mat-toolbar>
 
 <!-- this creates a google map on the page with the given lat/lng from -->
 <!-- the component as the initial center of the map: -->
 <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
+<mat-list>
+  <mat-list-item>Current Air Quality level: OK</mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>Current Location:  <b>23 The Mound, Edinburgh EH2, UK</b></mat-list-item>
+</mat-list>
