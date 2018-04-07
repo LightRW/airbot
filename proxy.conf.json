@@ -1,0 +1,8 @@
+{
+  "/v1/assets/*": {
+    "target": "http://mokanix.io",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
